@@ -1,0 +1,29 @@
+.iconContainer {
+    position: relative;
+    display: inline-block;
+}
+
+.iconCart{
+    width: 30px;
+    height: 30px;
+    stroke: #000;
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+.counterCart{
+    position: absolute;
+    top: 55%;
+    right: 0%;
+
+    background-color: #000;
+    color: #fff;
+    width: 15px;
+    height: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
