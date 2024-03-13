@@ -4,9 +4,9 @@ const products = [
         name: 'Iphone 12', 
         price: 1000, 
         category: 'Phone', 
-        outstanding:'Featured Products',
+        outstanding:'',
         img:'https://http2.mlstatic.com/D_NQ_NP_2X_783007-MLA74862366574_032024-F.webp', 
-        stock: 4, 
+        stock: 10, 
         description:'The iPhone 12 innovation and style in an iconic design. With a powerful camera and exceptional performance, it redefines the mobile experience for technology lovers.'},
     
     { 
@@ -14,7 +14,7 @@ const products = [
         name: 'Samsung s23', 
         price: 5000, 
         category: 'Phone', 
-        outstanding:'Featured Products',
+        outstanding:'',
         img:'https://http2.mlstatic.com/D_NQ_NP_2X_968012-MLU74033800854_012024-F.webp', 
         stock: 16, 
         description:'The Samsung Galaxy S23 power and style in a sleek design. With a brilliant display and advanced camera, it redefines the mobile experience for tech lovers.'},
@@ -23,8 +23,9 @@ const products = [
         name: 'Apple iPad Pro de 12.9', 
         price: 4200, 
         category: 'Tablet', 
+        outstanding:'FeaturedProducts',
         img:'https://http2.mlstatic.com/D_NQ_NP_2X_818249-MLA54272085267_032023-F.webp', 
-        stock: 2, 
+        stock: 5, 
         description:'The 12.9-inch iPad Pro (5th generation): Power and versatility in a stunning display. With exceptional performance and advanced features, it redefines the tablet experience.'},
 ]
 

@@ -13,7 +13,10 @@ const Navbar = () => {
                         <Link to={'/outstanding/FeaturedProducts'} className={classes.enlace} href="./pages/new-arrials.html">Featured Products</Link>
                     </li>
                     <li>
-                        <Link to={'/category/Products'} className={classes.enlace} href="./pages/productos.html">Products</Link>
+                        <Link to={'/category/Phone'} className={classes.enlace} href="./pages/productos.html">Phone</Link>
+                    </li>
+                    <li>
+                        <Link to={'/category/Tablet'} className={classes.enlace} href="./pages/productos.html">Tablet</Link>
                     </li>
                     
                 </ul>

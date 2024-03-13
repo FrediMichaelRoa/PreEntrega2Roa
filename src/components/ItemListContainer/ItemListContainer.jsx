@@ -10,13 +10,15 @@ const ItemListContainer = ({ greeting }) => {
     useEffect(() => {
         const fetchData = async () => {
             let result
+
             if (outstandingId) {
-                result = await getProductsByOutstanding()
+                result = await getProductsByOutstanding(outstandingId)
             } else if (categoryId) {
                 result = await getProductsByCategory(categoryId)
             } else {
                 result = await getProducts()
             }
+
             setProducts(result)
         }
 
