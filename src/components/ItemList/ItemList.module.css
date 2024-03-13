@@ -1,0 +1,10 @@
+/* ItemList.module.css */
+
+.itemList {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; /* Para espaciar los elementos equitativamente */
+    flex-wrap: wrap; /* Para permitir que los elementos se envuelvan en múltiples líneas si no caben en una sola fila */
+    
+}
+

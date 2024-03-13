@@ -2,11 +2,10 @@ import carrito from './assets/carrito.svg'
 import classes from "./CartWidget.module.css"
 
 const CartWidget = ()=>{
-    console.log(classes.counterCart)
     return(
         <div className={classes.iconContainer}>
-        <img className={classes.iconCart} src={carrito} alt="Carrito" />
-        <div className={classes.counterCart}>0</div>
+            <img className={classes.iconCart} src={carrito} alt="Carrito" />
+            <div className={classes.counterCart}>0</div>
         </div>
     )
 }

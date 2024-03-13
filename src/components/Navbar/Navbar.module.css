@@ -6,7 +6,7 @@
     height: 64px;
     padding: 0 20px;
     gap: 1rem;
-    background-color: #F5F5F5;
+    background-color: #ffffff;
     width: 100%;
 }
 
@@ -37,12 +37,6 @@ ul li:last-child {
     box-sizing: border-box;
 }
 
-body {
-    margin: 0;
-    padding: 0;
-    font-family: "Play", sans-serif;
-    background-color: black;
-}
 
 main {
     width: 100%;
