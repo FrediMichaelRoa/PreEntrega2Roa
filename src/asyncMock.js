@@ -27,6 +27,16 @@ const products = [
         img:'https://http2.mlstatic.com/D_NQ_NP_2X_818249-MLA54272085267_032023-F.webp', 
         stock: 5, 
         description:'The 12.9-inch iPad Pro (5th generation): Power and versatility in a stunning display. With exceptional performance and advanced features, it redefines the tablet experience.'},
+        {
+            id: '4', 
+        name: 'Iphone 15 Pro', 
+        price: 5200, 
+        category: 'Phone', 
+        outstanding:'FeaturedProducts',
+        img:'https://http2.mlstatic.com/D_NQ_NP_2X_891263-MLA71783089058_092023-F.webp', 
+        stock: 5, 
+        description:'The iPhone 15 Pro boasts cutting-edge technology, stunning design, and exceptional performance, redefining the mobile experience for enthusiasts worldwide.'},
+
 ]
 
 
