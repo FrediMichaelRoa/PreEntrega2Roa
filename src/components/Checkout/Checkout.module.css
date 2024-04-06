@@ -1,0 +1,70 @@
+
+.formcontainer {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    height: 80vh; /* Tamaño total de la pantalla */
+}
+
+.form {
+    width: 80%; /* Ancho del formulario */
+    max-width: 400px; /* Ancho máximo del formulario */
+    padding: 20px;
+    background-color: rgb(255, 250, 235);
+    box-shadow: 0px 187px 75px rgba(0, 0, 0, 0.01), 0px 105px 63px rgba(0, 0, 0, 0.05), 0px 47px 47px rgba(0, 0, 0, 0.09), 0px 12px 26px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 19px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.form input[type="text"],
+.form input[type="email"],
+.form input[type="tel"],
+.form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid rgb(16, 86, 82);
+    border-radius: 5px;
+    outline: none;
+    background-color: rgb(251, 243, 228);
+    transition: border-color 0.3s ease;
+    font-family: 'Roboto', sans-serif;
+}
+
+.form input[type="text"]:focus,
+.form input[type="email"]:focus,
+.form input[type="tel"]:focus,
+.form textarea:focus {
+    border-color: rgb(201, 193, 178);
+    box-shadow: 0px 0px 0px 2px rgb(251, 243, 228);
+}
+
+.form button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(16, 86, 82, .75);
+    box-shadow: 0px 0.5px 0.5px #F3D2C9, 0px 1px 0.5px rgba(239, 239, 239, 0.5);
+    border: 0;
+    border-radius: 5px;
+    color: #000;
+    font-weight: 600;
+    font-size: 12px;
+    transition: background-color 0.3s ease;
+    font-family: 'Roboto', sans-serif;
+}
+
+.form button[type="submit"]:hover {
+    background-color: #105652;
+}
+
+
+.error-message {
+    color: red;
+    margin-top: 5px;
+}
+
+
+.success-message {
+    color: green;
+    margin-top: 5px;
+}

@@ -15,6 +15,7 @@
     margin-bottom: 20px;
     padding: 10px;
     background-color: white;
+    
 }
 
 .card img {
@@ -22,6 +23,7 @@
     max-height: 50vh; /* Limita la altura máxima de la imagen */
     object-fit: contain;
     border-radius: 7px;
+    
 }
 
 .detail h3, .detail h4, .detail h5{
@@ -42,4 +44,9 @@
 
 h5 {
     color: gray;
+}
+
+
+.checkoutLink{
+    color: blue;
 }

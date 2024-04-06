@@ -41,10 +41,12 @@ ul li:last-child {
 main {
     width: 100%;
     max-width: 100%;
-    overflow-x: hidden;
+    
 }
 
-input {
+input::placeholder {
+    color: #978b8b; /* Cambia el color del placeholder a gris, por ejemplo */
+    text-transform: uppercase;
     padding: 2px 10px;
 }
 

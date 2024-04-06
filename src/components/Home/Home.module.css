@@ -1,0 +1,66 @@
+.container {
+    position: relative;
+}
+
+.img1 {
+    width: 100vw; /* Ocupa el 100% del ancho de la ventana gráfica */
+    max-height: 80vh; /* Limita la altura de la imagen */
+    object-fit: cover; /* Mantiene la proporción de la imagen sin distorsionar */
+    object-position:  top 13rem bottom 0px;
+}
+
+.img2 {
+    width: 100vw; /* Ocupa el 100% del ancho de la ventana gráfica */
+    max-height: 76vh; /* Limita la altura de la imagen */
+    object-fit: cover; /* Mantiene la proporción de la imagen sin distorsionar */
+    object-position: top ;
+}
+
+.text1, .text3{
+    position: absolute;
+    top: 13%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1; /* Coloca el texto sobre la imagen */
+}
+
+h2{
+    position: absolute;
+    top: 23%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1; /* Coloca el texto sobre la imagen */
+}
+
+  /* Estilos de texto */
+.text1 {
+    font-size: 48px;
+    font-weight: 600;
+    font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    color: white;
+}
+
+.text2 {
+    font-size: 24px;
+    font-weight: 400;
+    font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    color: white;
+}
+
+.section {
+    margin-top: 50px; /* Espacio entre secciones */
+}
+
+.text3 {
+    font-size: 48px;
+    font-weight: 600;
+    font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    color: black;
+}
+
+.text4{
+    font-size: 24px;
+    font-weight: 400;
+    font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    color: black;
+}

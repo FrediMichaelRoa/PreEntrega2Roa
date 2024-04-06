@@ -5,7 +5,7 @@ const ItemList = ({ products }) => {
     return (
         <section className={styles.itemList}>
             {
-                products.map(product => {
+                products?.map((product) => {
                     return <Item key={product.id} {...product}/>
                 })
             }
@@ -14,3 +14,5 @@ const ItemList = ({ products }) => {
 }
 
 export default ItemList;
+
+//??

@@ -1,10 +1,13 @@
-/* ItemList.module.css */
-
 .itemList {
     display: flex;
     flex-direction: row;
-    justify-content: space-around; /* Para espaciar los elementos equitativamente */
-    flex-wrap: wrap; /* Para permitir que los elementos se envuelvan en múltiples líneas si no caben en una sola fila */
-    
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: flex-start; /* Alinea los elementos al principio del contenedor */
 }
 
+/* Ajusta el tamaño de los elementos y agrega un margen inferior */
+.itemList article {
+    flex: 1 0 30%; /* Ajusta el tamaño de los elementos para que ocupen aproximadamente el 30% del contenedor */
+    margin-bottom: 20px; /* Agrega un margen inferior para separar los elementos */
+}

@@ -1,6 +1,29 @@
+/* Borrar flechas del contador*/
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
 
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container input[type="number"] {
+    text-align: center; /* Alinea el texto dentro del campo de entrada */
+}
 
 .addcart {
+    padding-bottom:10px;
     width: 140px;
     height: 40px;
     border-radius: 12px;
@@ -18,6 +41,7 @@
 }
 
 .IconContainer {
+    
     position: absolute;
     left: -50px;
     width: 30px;
@@ -66,8 +90,9 @@
 }
 
 .btn{
-    width: 40px;
-    height: 40px;
+    
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     border: none;
     background-color: #2A445B;

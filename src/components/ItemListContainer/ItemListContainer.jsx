@@ -1,38 +1,42 @@
-import { useState, useEffect } from "react"
-import { getProducts, getProductsByCategory, getProductsByOutstanding } from "../../asyncMock"
+import { useState } from "react"
 import ItemList from "../ItemList/ItemList"
 import { useParams } from "react-router-dom"
+import { collection, getDocs, query, where } from "firebase/firestore"
+import { db } from "../../Services/Firebase/FirebaseConfig"
+import { useAsync } from "../../hooks/useAsync"
+
+const fetchData = async (categoryId, outstandingId) => {
+    let productsCollection = collection(db, 'products');
+
+    if (outstandingId) {
+        productsCollection = query(productsCollection, where('outstanding', '==', true));
+    } else if (categoryId) {
+        productsCollection = query(productsCollection, where('category', '==', categoryId));
+    }
+
+    const querySnapshot = await getDocs(productsCollection);
+    return querySnapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
+};
 
 const ItemListContainer = ({ greeting }) => {
-    const [products, setProducts] = useState([])
     const { categoryId, outstandingId } = useParams()
 
-    useEffect(() => {
-        const fetchData = async () => {
-            let result
+    const { data: products, loading, error } = useAsync(() => fetchData(categoryId, outstandingId), [categoryId, outstandingId]);
 
-            if (outstandingId) {
-                result = await getProductsByOutstanding(outstandingId)
-            } else if (categoryId) {
-                result = await getProductsByCategory(categoryId)
-            } else {
-                result = await getProducts()
-            }
+    if (loading) {
+        return <div style={{ textAlign: 'center', padding: '10px' }}>Loading...</div>;
+    }
 
-            setProducts(result)
-        }
-
-        fetchData()
-    }, [categoryId, outstandingId])
+    if (error) {
+        return <div>Error: {error.message}</div>;
+    }
 
     return (
-        <main>
+        <div>
             <h1 style={{ textAlign: 'center', padding: '10px' }}>{greeting}</h1>
             <ItemList products={products} />
-        </main>
+        </div>
     )
 }
 
 export default ItemListContainer
-
-
